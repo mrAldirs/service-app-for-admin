@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeAdmin"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_informasiAdmin"
+        android:icon="@drawable/informasi"
+        android:title="Informasi"/>
+
+    <item
+        android:id="@+id/nav_feddbackAdmin"
+        android:icon="@drawable/ic_feedback"
+        android:title="Feedback Pengguna"/>
+
+    <item
+        android:title="Pengguna"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_userAdmin"
+                android:icon="@drawable/akun"
+                android:title="Pelanggan" />
+
+            <item
+                android:id="@+id/nav_chatAdmin"
+                android:icon="@drawable/chat"
+                android:title="Chat Pelanggan" />
+        </menu>
+    </item>
+
+    <item
+        android:title="Barang"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_barangAdmin"
+                android:icon="@drawable/barang"
+                android:title="Katalog Barang"/>
+            <item
+                android:id="@+id/nav_barangTerjualAdmin"
+                android:icon="@drawable/barang_terjual"
+                android:title="Barang Terjual"/>
+            <item
+                android:id="@+id/nav_pemesananAdmin"
+                android:icon="@drawable/ic_order"
+                android:title="Pre-Order Barang"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Servis"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_servisAdmin"
+                android:icon="@drawable/ic_servis_main"
+                android:title="Servis Barang"/>
+
+<!--            <item-->
+<!--                android:id="@+id/nav_mekanik"-->
+<!--                android:icon="@drawable/ic_mekanik"-->
+<!--                android:title="Mekanik"/>-->
+
+            <item
+                android:id="@+id/nav_riwayatServis"
+                android:icon="@drawable/ic_hourglass"
+                android:title="Riwayat Servis"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Jual Beli"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_transaksiAdmin"
+                android:icon="@drawable/transaksi"
+                android:title="Transaksi"/>
+        </menu>
+    </item>
+    <item
+        android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_pengirimanAdmin"
+                android:icon="@drawable/delivery"
+                android:title="Pengiriman"/>
+
+            <item
+                android:id="@+id/nav_laporanAdmin"
+                android:icon="@drawable/laporan"
+                android:title="Laporan Pendapatan"/>
+        </menu>
+    </item>
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_resetAdmin"
+                android:icon="@drawable/privacy"
+                android:title="Privasi Akun"/>
+
+            <item
+                android:id="@+id/nav_logoutAdmin"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

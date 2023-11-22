@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Helper.BaseApplication"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_apk_admin"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Admin_servis"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value=
+                "@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDmcXgQN8gm5zhAnryw0ntBsORQXXsf260" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ImageDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Chat -->
+        <activity android:name=".View.Chat.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Chat.ChatMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Informasi -->
+        <activity android:name=".Informasi.InformasiMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Feedback -->
+        <activity android:name=".Feedback.FeedbackMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Akun -->
+        <activity android:name=".Akun.AkunMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- User -->
+        <activity android:name=".View.User.UserMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Barang -->
+        <activity android:name=".View.Barang.TersediaMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Barang.TerjualMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Barang.BarangDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Servis -->
+        <activity android:name=".Servis.ServisMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Servis.ServisDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Servis.ServisRiwayatActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Jual Beli -->
+        <activity android:name=".JualBeli.PemesananMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JualBeli.TransaksiMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JualBeli.PemesananDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JualBeli.BeliDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JualBeli.JualDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Pengiriman -->
+        <activity android:name=".View.Pengiriman.PengirimanMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Pengiriman.PengirimanDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <!-- Laporan -->
+        <activity android:name=".View.Laporan.LaporanMainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

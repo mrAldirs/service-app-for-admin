@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuBerandaAdmin"
+        android:icon="@drawable/home"
+        android:title="Beranda"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuBayarAdmin"
+        android:icon="@drawable/qr_code"
+        android:title="Income"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuProfilAdmin"
+        android:icon="@drawable/akun"
+        android:title="Profil"
+        app:showAsAction="ifRoom" />
+
+</menu>

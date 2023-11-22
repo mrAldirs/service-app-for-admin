@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuPhotoRealtime"
+        android:title="Kamera" />
+    <item
+        android:id="@+id/menuPhotoManager"
+        android:title="File Manager" />
+
+</menu>

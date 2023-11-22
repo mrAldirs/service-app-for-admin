@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardServis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E4E4E4"
+        android:layout_marginHorizontal="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/adpNamaServis"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/adpKodeServis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/adpTanggalKirimServis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00 00:00"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"/>
+
+        <TextView
+            android:id="@+id/adpKerusakanServis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:maxLength="42"
+            android:ems="20"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"
+            android:text="Kerusakan"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/adpStatusServis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="56dp"
+            android:maxLines="1"
+            android:text="baru"
+            android:textStyle="italic"
+            android:textColor="#2046FF" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardServis"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

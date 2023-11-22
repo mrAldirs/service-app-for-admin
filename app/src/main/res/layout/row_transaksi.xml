@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="8dp"
+        android:backgroundTint="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/transaksiTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00 00:00"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/transaksiKode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/transaksiNama"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/transaksiJenisTransaksi"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="8dp"
+            android:lineSpacingExtra="8sp"
+            android:text="Jenis"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/transaksiStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="18dp"
+            android:maxLines="1"
+            android:text="baru"
+            android:textStyle="italic"
+            android:textColor="#2046FF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/underline"
+            android:layout_gravity="bottom"/>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
